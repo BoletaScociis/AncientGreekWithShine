@@ -293,6 +293,10 @@ void FN2Orange(led_t *currentKeyLedColors) {
     for (uint16_t i = 0; i < NUM_COLUMN * NUM_ROW; ++i) {
         setKeyColor(&currentKeyLedColors[i], naiveDimRGB(FN2Orange_keycols[i]));
 
+    }
+
+}
+
 /*** FN3 layer colours ***/
 
 static const uint32_t FN3Yellow_keycols[NUM_COLUMN * NUM_ROW] = {
@@ -307,11 +311,15 @@ void FN3Yellow(led_t *currentKeyLedColors) {
     for (uint16_t i = 0; i < NUM_COLUMN * NUM_ROW; ++i) {
         setKeyColor(&currentKeyLedColors[i], naiveDimRGB(FN3Yellow_keycols[i]));
 
+    }
+
+}
+
 /*** FN4 layer colours ***/
 
 static const uint32_t FN4Red_keycols[NUM_COLUMN * NUM_ROW] = {
 /*  ESC   1    2    3    4    5    6    7    8    9    0    -    +    BS */
-    ___, BUO, BUO, BUO BUO, ___, ___, ___, BUO, BUO, BUO, BUO, ___, ___,
+    ___, BUO, BUO, BUO, BUO, ___, ___, ___, BUO, BUO, BUO, BUO, ___, ___,
     ___, BUO, BUO, BUO, ___, ___, ___, ___, ___, ___, ___, BUO, BUO, ___,
     ___, BUO, BUO, BUO, ___, ___, ___, ___, ___, BUO, BUO, BUO, BUO, ___,
     ___, ___, BUO, BUO, BUO, ___, ___, ___, BUO, BUO, BUO, ___, ___, ___,
@@ -321,9 +329,9 @@ void FN4Red(led_t *currentKeyLedColors) {
     for (uint16_t i = 0; i < NUM_COLUMN * NUM_ROW; ++i) {
          setAllKeysColor(currentKeyLedColors, naiveDimRGB(0x66BB6A));
 
-   };
+   }
       
-
+} 
 
 
 /*
