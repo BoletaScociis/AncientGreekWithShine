@@ -264,7 +264,7 @@ static const uint32_t BaseBlue_keycols[NUM_COLUMN * NUM_ROW] = {
 };
 void BaseBlue(led_t *currentKeyLedColors) {
     for (uint16_t i = 0; i < NUM_COLUMN * NUM_ROW; ++i) {
-        setAllKeysColor(currentKeyLedColors, naiveDimRGB(0x29B6F6));
+        setAllKeysColor(currentKeyLedColors, naiveDimRGB(BaseBlue_keycols[i]));
         
     }
 }
@@ -275,7 +275,7 @@ static const uint32_t FN1Green_keycols[NUM_COLUMN * NUM_ROW] = {
 };
 void FN1Green(led_t *currentKeyLedColors) {
     for (uint16_t i = 0; i < NUM_COLUMN * NUM_ROW; ++i) {
-        setAllKeysColor(currentKeyLedColors, naiveDimRGB(0x66BB6A));
+        setAllKeysColor(currentKeyLedColors, naiveDimRGB(FN1Green_keycols[i]));
     }
 }
 
@@ -327,7 +327,7 @@ static const uint32_t FN4Red_keycols[NUM_COLUMN * NUM_ROW] = {
 };
 void FN4Red(led_t *currentKeyLedColors) {
     for (uint16_t i = 0; i < NUM_COLUMN * NUM_ROW; ++i) {
-         setAllKeysColor(currentKeyLedColors, naiveDimRGB(0x66BB6A));
+         setAllKeysColor(currentKeyLedColors, naiveDimRGB(FN4Red_keycols[i]));
 
    }
       
